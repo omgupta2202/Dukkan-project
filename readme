@@ -1,0 +1,27 @@
+Dukaan Project
+Dukaan is a tech platform that enables businesses to quickly set up and run an online retail store. It provides a user-friendly interface for sellers to create their store, upload inventory, and accept online orders. Customers can browse through the product catalog, add items to their cart, and place orders.
+
+This project is implemented using Django and Django REST Framework (DRF) and utilizes a SQL database for data storage.
+
+Project Structure
+The project follows a modular structure with separate apps for different functionalities:
+
+dukaan_project: The main project directory.
+seller_app: The app responsible for seller-related functionality, including sign-up, store creation, and product management.
+customer_app: The app responsible for customer-related functionality, including customer registration, cart management, and order placement.
+Setup and Installation
+To set up the Dukaan project locally, follow these steps:
+
+
+API Endpoints
+The Dukaan project exposes several API endpoints for different functionalities. Here are some of the main endpoints:
+
+Seller API Endpoints:
+POST /api/seller/signup/: Sign up a seller using their mobile number and OTP.
+POST /api/seller/store/create/: Create a store for a seller by providing the store name and address.
+POST /api/seller/product/create/: Upload a product to a seller's store, including product details and category.
+
+Customer API Endpoints:
+POST /api/customer/create/: Create a customer account by providing the mobile number and address.
+POST /api/customer/cart/add/: Add items to the customer's cart by providing the product ID and quantity.
+POST /api/customer/order/place/: Place an order by providing the customer ID, store ID, and cart items.
